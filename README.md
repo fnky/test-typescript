@@ -54,3 +54,22 @@ declare module 'foo/bar' {
 ```
 
 Rather than having to maintain two declaration files with the same API, I'd like to import the initial interface from `index` in `bar` and extend extra functionality, that `bar` may have.
+
+## Working example
+
+The following will work, but is not maintainable for declarations that exports a large number of interfaces and types.
+
+```ts
+// foo/bar.d.ts
+declare module 'foo/bar' {
+  import * as foo from 'foo';
+  
+  // Export a class which extends from 'foo'.
+  export class Foo extends foo.Foo {}
+
+  export class Bar {
+    constructor(bar: string);
+    bar: string;
+  }
+}
+```
