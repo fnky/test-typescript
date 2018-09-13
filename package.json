@@ -1,0 +1,15 @@
+{
+  "name": "test-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christian Petersen <chrs@cbp.io> (http://cbp.io/)",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "typescript": "^3.0.3",
+    "foo": "file:./foo"
+  }
+}
