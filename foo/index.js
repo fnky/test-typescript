@@ -4,4 +4,4 @@ class Foo {
   }
 }
 
-module.exports.Foo = IndexBuffer;
+module.exports.Foo = Foo;
