@@ -4,3 +4,5 @@ declare module 'foo' {
     source: string;
   }
 }
+
+// export as namespace foo;

@@ -1,8 +1,7 @@
-import 'foo'; // Comment this and compile
+/// <reference path="index.d.ts" />
+import * as foo from 'foo';
 
-declare module 'foo/bar' {
-  export class Bar {
-    constructor(bar: string);
-    bar: string;
-  }
+export class Bar {
+  constructor(bar: string);
+  bar: string;
 }
